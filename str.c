@@ -36,7 +36,7 @@ char* substr(char* string, int start, int end)
     char* result = (char*)malloc(sizeof(string));
 
     int maxIndex = lenstr(string);
-    if (start >= 0 && start <= maxIndex && end >= 0 && end <= maxIndex && start < end)
+    if (start >= 0 && start <= maxIndex && end >= 0 && end <= maxIndex && start <= end)
     {
         for (int i = 0; i <= end - start; i++)
         {
